@@ -14,10 +14,11 @@ param($Request, $TriggerMetadata)
 
 ## Start making changes from this point
 
-$url = "REPLACEME"
-$method = "GET"
+$url = "https://htfapi.azurewebsites.net/api/the-good-hearted-fella"
+$method = "POST"
 $body = @{
     # Add a body here
+    "showYourInnerSelf": false
 }
 $jsonBody = $body | ConvertFrom-Json
 
