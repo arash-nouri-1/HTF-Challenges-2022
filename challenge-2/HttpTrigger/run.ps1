@@ -18,11 +18,9 @@ $url = "https://htfapi.azurewebsites.net/api/the-good-hearted-fella"
 $method = "POST"
 $body = @{
     # Add a body here
-    "showYourInnerSelf": false,
-    "teamId": "22215", 
-
+    "showYourInnerSelf": $true
 }
-$jsonBody = $body | ConvertFrom-Json
+$jsonBody = $body | ConvertTo-Json
 
 
 
